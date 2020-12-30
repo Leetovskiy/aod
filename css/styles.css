@@ -84,9 +84,16 @@ body, html, * {
   color: #848789;
 }
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 .container {
   max-width: 1100px;
-  padding: 0 15px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -305,6 +312,72 @@ body, html, * {
 }
 
 /* Header end */
+
+
+/* About start */
+
+.about {
+  padding-top: 194px;
+  padding-bottom: 142px;
+  background: #f7f7f7;
+  position: relative;
+}
+
+.about::after {
+  content: '';
+  display: block;
+  width: 52px;
+  height: 43px;
+  background: url('../img/about_icon.png') no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 116px;
+  left: calc(50% - 26px);
+}
+
+.about__title {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #353738;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.about__text {
+  font-size: 18px;
+  line-height: 34px;
+  font-weight: 400;
+  text-align: center;
+  color: #848789;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .about {
+    padding-top: 120px;
+    padding-bottom: 50px;
+  }
+
+  .about::after {
+    top: 50px;
+  }
+
+  .about__title {
+    font-size: 1.5em;
+  }
+
+  .about__text {
+    font-size: 1.3em;
+    text-align: justify;
+  }
+}
+
+/* About end */
+
 
 /* Footer start */
 
