@@ -215,10 +215,13 @@ html {
     text-align: center;
   }
 
+  .contacts__text_big {
+    font-size: 1.5em;
+  }
+
   .contacts__text,
-  .contacts__text_big,
   .contacts__link {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 }
 
@@ -366,7 +369,7 @@ html {
   }
 
   .slider__text {
-    font-size: 1.4em;
+    font-size: 1.3em;
     text-align: justify;
   }
 
@@ -471,6 +474,10 @@ html {
 }
 
 @media (max-width: 768px) {
+  .mailing__title {
+    font-size: 1.5em;
+  }
+
   .mailing__field-label {
     margin: 0;
   }
