@@ -377,6 +377,102 @@ html {
 }
 
 /* Slider end */
+
+
+/* Mailing start */
+
+.mailing {
+  max-width: 535px;
+}
+
+.mailing__logo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.mailing__title {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 400;
+  font-style: italic;
+  color: #848789;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.mailing__form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mailing__field-label {
+  flex-grow: 7;
+  min-width: 250px;
+  margin-right: 8px;
+}
+
+.mailing__field {
+  padding: 24px;
+  background-color: #ffffff;
+  border: 1px solid #d3d7d9;
+  border-radius: 0;
+  height: 70px;
+  width: 100%;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: italic;
+  color: #929292;
+}
+.mailing__field:hover {
+  border-color: #9FA2A3;
+}
+.mailing__field:focus {
+  outline: none;
+  border: 2px solid #9FA2A3;
+}
+
+.mailing__field::placeholder {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: italic;
+  color: #929292;
+}
+
+.mailing__button {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  background: #64c29e;
+  padding: 20px 20px;
+  height: 70px;
+  cursor: pointer;
+  flex-grow: 1;
+}
+.mailing__button:hover {
+  background: #5D927E;
+}
+.mailing__button:focus {
+  outline: none;
+  outline: 2px solid #207E5B;
+}
+.mailing__button:active {
+  background: #207E5B;
+}
+
+@media (max-width: 600px) {
+  .mailing__field-label {
+    margin: 0;
+  }
+}
+
+/* Mailing end */
 /* === COMPONENTS END === */
 
 
@@ -490,6 +586,20 @@ html {
 }
 
 /* Blog end */
+
+
+/* Mailing start */
+
+.mailing-section {
+  background: #fff;
+  padding: 100px 0;
+}
+
+.mailing-section__mailing {
+  margin: 0 auto;
+}
+
+/* Mailing end */
 
 
 /* Footer start */
