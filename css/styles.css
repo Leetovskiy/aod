@@ -147,7 +147,7 @@ html {
 
 /* Burger Styles */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .menu {
     flex-direction: column;
   }
@@ -206,7 +206,7 @@ html {
   opacity: .7;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .contacts {
     text-align: center;
   }
@@ -270,7 +270,7 @@ html {
   background-size: contain;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .socials {
     max-width: 350px;
   }
@@ -351,7 +351,7 @@ html {
   background: #a9afb3;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .slider__post::before {
     width: 42px;
     height: 37px;
@@ -466,13 +466,168 @@ html {
   background: #207E5B;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .mailing__field-label {
     margin: 0;
   }
 }
 
 /* Mailing end */
+
+
+/* Info Gallery start */
+
+.info-gallery__item {
+  display: flex;
+  overflow: hidden;
+
+}
+
+.info-gallery__photo {
+  position: relative;
+  overflow: hidden;
+  flex-grow: 9;
+}
+
+.info-gallery__photo-pic {
+  position: absolute;
+  object-fit: fill;
+  height: 100%;
+}
+
+.info-gallery__photo-icon {
+  position: absolute;
+}
+.info-gallery__photo-icon_first {
+  width: 112px;
+  top: calc(50% - 56px);
+  left: calc(50% - 58px);
+}
+.info-gallery__photo-icon_second {
+  width: 176px;
+  top: calc(50% - 88px);
+  left: calc(50% - 76px);
+}
+.info-gallery__photo-icon_third {
+  width: 208px;
+  top: calc(50% - 33px);
+  left: calc(50% - 104px);
+}
+
+.info-gallery__info {
+  min-width: 320px;
+  max-width: 530px;
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.info-gallery__text-wrapper {
+  padding-top: 60px;
+  padding-bottom: 95px;
+  padding-left: 66px;
+  padding-right: 66px;
+  background: #fff;
+  position: relative;
+  z-index: 2;
+}
+.info-gallery__text-wrapper::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 1px;
+  background-color: rgba(53,55,56,0.2);
+  position: absolute;
+  left: calc(50% - 25px);
+  bottom: 54px;
+}
+.info-gallery__text-wrapper::before {
+  content: '';
+  display: block;
+  width: 23px;
+  height: 10px;
+  background: url('../img/info-gallery_tail.png') center no-repeat;
+  background-size: contain;
+  left: calc(50% - 11.5px);
+  position: absolute;
+  bottom: -10px;
+}
+
+.info-gallery__title {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #353738;
+  text-align: center;
+  margin-bottom: 26px;
+}
+.info-gallery__title::before {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.info-gallery__title_first::before {
+  width: 41px;
+  height: 30px;
+  background: url('../img/info_gal__text_icon1.png') center no-repeat;
+  background-size: contain;
+}
+.info-gallery__title_second::before {
+  width: 32px;
+  height: 32px;
+  background: url('../img/info_gal__text_icon2.png') center no-repeat;
+  background-size: contain;
+}
+.info-gallery__title_third::before {
+  width: 23px;
+  height: 41px;
+  background: url('../img/info_gal__text_icon3.png') center no-repeat;
+  background-size: contain;
+}
+
+.info-gallery__text {
+  line-height: 30px;
+  font-weight: 400;
+  color: #848789;
+  text-align: justify;
+}
+
+.info-gallery__thumb {
+  width: 100%;
+  display: flex;
+}
+
+.info-gallery__thumb-pic {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .info-gallery__photo {
+    display: none;
+  }
+
+  .info-gallery__info {
+    max-width: 100%;
+  }
+
+  .info-gallery__text-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .info-gallery__title {
+    font-size: 1.5em;
+  }
+
+  .info-gallery__text {
+    font-size: 1.3em;
+  }
+}
+
+/* Info Gallery end */
 /* === COMPONENTS END === */
 
 
@@ -492,7 +647,7 @@ html {
   margin: 0 auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .menu__burger-btn {
     margin-left: auto;
   }
@@ -547,7 +702,7 @@ html {
   margin: 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .about {
     padding-top: 120px;
     padding-bottom: 50px;
@@ -570,6 +725,16 @@ html {
 /* About end */
 
 
+/* Work start */
+
+.work__container {
+  max-width: 1600px;
+  padding: 0;
+}
+
+/* Work end */
+
+
 /* Blog start */
 
 .blog {
@@ -578,7 +743,7 @@ html {
   padding-bottom: 68px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .blog {
     padding-top: 62px;
     padding-bottom: 34px;
@@ -632,7 +797,7 @@ html {
   height: 36px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .footer .container {
     flex-direction: column;
   }
