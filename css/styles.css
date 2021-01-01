@@ -300,6 +300,7 @@ html {
 .slider__post {
   margin: 0;
   margin-bottom: 100px;
+  display: none;
 }
 
 .slider__post::before {
@@ -311,6 +312,10 @@ html {
   background-size: contain;
   margin: 0 auto;
   margin-bottom: 36px;
+}
+
+.slider__post_active {
+  display: block;
 }
 
 .slider__source {
