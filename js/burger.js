@@ -1,22 +1,9 @@
-let burgerMenu = document.querySelector('.menu');
+let burgerButton = document.querySelector('.menu__burger-btn');
+let navigation = document.querySelector('.menu__navigation');
 
-let burgerMenuItems = document.querySelectorAll('.menu__item');
+burgerButton.addEventListener('click', function() {
+  console.log('test');
 
-let isBurgerOpened;
-
-function switchBurgerState() {
-  burgerMenuItems.forEach((item) => {
-    if (item.className == 'menu__item menu__item-logo') return;
-    item.style.display = (isBurgerOpened) ? 'none' : 'initial';
-  });
-
-  isBurgerOpened = !isBurgerOpened;
-}
-
-window.addEventListener(`resize`, event => {
-  if (window.innerWidth > 600) {
-    burgerMenuItems.forEach((item) => {
-      item.style.display = 'initial';
-    });
-  }
-}, false);
+  burgerButton.classList.toggle('menu__burger-btn_active');
+  navigation.classList.toggle('menu__navigation_shown');
+});

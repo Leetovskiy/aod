@@ -115,7 +115,7 @@ html {
 /* === COMPONENTS === */
 /* Main Navigation start */
 
-.menu {
+.menu__navigation {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -152,31 +152,37 @@ html {
 /* Burger Styles */
 
 @media (max-width: 768px) {
-  .menu {
+  .menu__navigation {
     flex-direction: column;
+    display: none;
   }
-  
+
+  .menu__navigation_shown {
+    display: flex;
+  }
+
   .menu__burger-btn {
     content: '';
     display: block;
     width: 40px;
     height: 40px;
     background: url('../img/burger_icon.svg') center no-repeat;
-    background-size: contain;
+    background-size: cover;
     cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  .menu__burger-btn_active {
+    background-image: url('../img/cross-icon.svg');
   }
   
   .menu__item {
-    display: none;
     line-height: 1.5;
     font-size: 1.5em;
   }
-  
+
   .menu__item-logo {
-    display: block;
-    position: absolute;
-    left: 15px;
-    top: 35px;
+    display: none;
   }
 }
 
@@ -690,9 +696,10 @@ html {
   background:
     url('../img/header_bg.jpg') center no-repeat,
     #e9e8ef;
-  background-size: fill contain;
+  background-size: cover;
   padding-top: 35px;
   padding-bottom: 580px;
+  height: 100vh;
 }
 
 .header__menu {
