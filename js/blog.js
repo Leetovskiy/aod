@@ -10,6 +10,7 @@ sliderButtons[2].addEventListener('click', () => toggleActiveStatus(2));
 function toggleActiveStatus(targetIndex) {
   activePost.classList.remove('slider__post_active');
   activeButton.classList.remove('slider__button_active');
+
   activeButton = sliderButtons[targetIndex];
   activePost = sliderPosts[targetIndex];
 
